@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandwich Builder 1.0</title>
+</head>
+<body>
+	<form name="Sandwich Builder" method="post" action="success.html">
+		<fieldset>
+			<div>
+				<label>Name</label>
+				<input type="text" name="name">
+			</div>
+			<div>
+				<label>Phone Number</label>
+				<input type="text" name="tel">
+			</div>
+			<div>
+				<label>Address</label>
+				<input type="text" name="addy">
+			</div>
+			<div>
+				<label>Delivery Date</label>
+				<input type="date" name="date">
+			</div>
+		</fieldset>	
+		
+		<fieldset>
+			<div>
+				<label>Select your Bread</label>
+				<select name="bread">
+					<option value="white">White Bread</option>
+					<option value="rye">Rye Bread</option>
+					<option value="wheat">Wheat Bread</option>
+					<option value="stale">Stale Bread</option>
+				</select>
+			</div>
+			<div>
+				<p>Describe your Perfect Sandwich!</p>
+				<textarea name="Sandwich_Description" rows="6" cols="60"></textarea>
+			</div>
+			<div>
+				<input type="checkbox" name="respect_sandwich" value="agree">
+				"I agree to respect my sandwich"
+			</div>	
+		</fieldset>
+		<button type="submit">Make my Sandwich!</button>
+	</form>
+</body>
+</html>
