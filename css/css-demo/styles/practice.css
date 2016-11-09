@@ -1,0 +1,18 @@
+section#contact-info p{
+	font-size: .8em;
+}
+.job {
+	background-color:#e9e5dc;
+	border-radius: 5px;
+	padding: 3px 3px;
+	margin: 5px 0px;
+}
+ul.small-text {
+	font-size: .8em;
+}
+.job li:last-of-type {
+color: blue;
+}
+section .volunteer-gig li:hover {
+	color: #43DA16;
+}
