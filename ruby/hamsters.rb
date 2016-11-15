@@ -10,11 +10,16 @@ if adoptable == "yes"
 	adoptable = true
 else adoptable = false	
 end
-p adoptable
 puts "what is the estimated age?"
 age = gets.chomp.to_i
 if age == ""
 		age = nil
 end 
  
+puts "Hamster #{hamster_name} was checked in today."
+puts "We estimate it's age to be #{age}."
+puts "We'd rate it a #{volume_level} out of 10 for loudness."
+puts "The coat on this furry beast is #{fur_color}."
+puts "Good candidate for adoption: #{adoptable}"
+
 
