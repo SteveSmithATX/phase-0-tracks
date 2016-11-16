@@ -35,11 +35,11 @@ end
 #Can't figure out how to bypass almost certain condition#
 if 	employee_def_vampire == true
 		puts "Definitely a Vampire!"
-elsif !employee_def_vampire && actual_age && employee_likes_garlic && employee_wants_health
+elsif actual_age && employee_likes_garlic && employee_wants_health
 		puts "Probably not a Vampire."
-elsif (actual_age and (employee_likes_garlic or employee_wants_health)) == false
+elsif actual_age and (employee_likes_garlic or employee_wants_health) == false
 		puts "Probably a Vampire."
-elsif  (employee_def_vampire && employee_name && employee_likes_garlic && employee_wants_health) == false 
+elsif  (actual_age and employee_likes_garlic and employee_wants_health) == false
 		puts "Almost Certainly A Vampire."
 else puts "Results inconclusive."
 end
