@@ -1,0 +1,23 @@
+body {
+  width: 1080px;
+  font-size: .8em;
+  background-image: url(http://www.lonestar-boston.com/includes/images/lonestar_logo.png)
+}
+.column-2,
+.column-1 {
+  background: beige;
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  padding: 5px;
+}
+
+header,
+footer {
+  text-align: center;
+  background: white;
+}
+header:hover {
+  background: red;
+
+}
