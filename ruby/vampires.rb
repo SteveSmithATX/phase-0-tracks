@@ -1,3 +1,8 @@
+puts "How many employees are we processing today?"
+processing_number = gets.chomp.to_i
+
+until processing_number == 0 
+
 puts "Hello, what is your full name?"
 employee_name = gets.chomp
 if employee_name == "Count Dracula"
@@ -42,6 +47,9 @@ elsif actual_age and (employee_likes_garlic or employee_wants_health) == false
 elsif  (actual_age and employee_likes_garlic and employee_wants_health) == false
 		puts "Almost Certainly A Vampire."
 else puts "Results inconclusive."
+end
+
+processing_number -= 1;
 end
 	
 
