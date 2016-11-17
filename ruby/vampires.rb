@@ -5,9 +5,7 @@ until processing_number == 0
 
 puts "Hello, what is your full name?"
 employee_name = gets.chomp
-if employee_name == "Count Dracula"
-		employee_def_vampire = true
-elsif employee_name == "Tu Fang"
+if employee_name == "Tu Fang"
 		 employee_def_vampire = true
 elsif employee_name == "Drake Cula"
 		 employee_def_vampire = true
@@ -37,24 +35,35 @@ if health_insurance == "yes"
 		employee_wants_health = true
 else    employee_wants_health = false 
 end
+
 #Time to display what we think the employee is#
 
 if  actual_age == true && (employee_likes_garlic == true || employee_wants_health  == true)
-		#puts "Probably not a Vampire."
 		vampire_level = 0
 end		
 if  actual_age == false && (employee_likes_garlic == false || employee_wants_health == false)
-		#puts "Probably a Vampire."
 		vampire_level = 1
 end
 if  actual_age == false && employee_likes_garlic == false && employee_wants_health == false
-		#puts "Almost Certainly A Vampire."
 		vampire_level = 2
 end
 if 	employee_def_vampire == true && actual_age == true && employee_likes_garlic == true && employee_wants_health == true
-		#puts "Definitely a Vampire!"
 		vampire_level = 3
 end	
+
+#Let's ask for any allergies
+
+answer = gets.chomp
+puts "Below, please inform us of any allergies you might have. When you're finished, of if none, type: done"
+while answer != "done"
+	puts "Please type an allergy you have"
+		answer = gets.chomp
+	if answer == "sunshine"
+		vampire_level = 3
+		break
+	end
+end
+
 if vampire_level == 0 
 	puts "Probably not a Vampire"
 elsif vampire_level == 1
@@ -67,7 +76,6 @@ else
 	puts "Results Inconclusive"
 end
 
-
-
 processing_number -= 1;
 end
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
