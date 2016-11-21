@@ -1,0 +1,26 @@
+Robot Elevator
+- Proceed to elevator area
+- Determine current floor level [current level]
+- Determine desired floor level [desired floor]
+  - if desired floor level is greater than current floor level, select the button that reads "up", ^, or has a triangle shaped like a pyramid
+    - press the button and wait
+  - if desired floor level is less than the current floor level, select the button that reads "down", v, or has an upside down pyramid shape.
+    - press the button and wait
+ - when the elevator arrives, wait 2 seconds to determind if any passengers need to exit: 
+   - if no passengers, proceed into elevator
+   - if passengers, upon exit of the last passenger, proceed into the elevator
+ - determine location of buttons and layout. 
+   - if there is a person by the buttons, ask them to please press the [desired floor] button.
+     - confirm button was pressed  
+   - if no person by the buttons, proceed to buttons
+     - determind button layout and whether each button has corresponding numbers either on the button or next to the button. 
+     	- select desired floor button
+     	- if desired floor is not found, look for symbols or numbers
+     	  - ground floor is equal to star, lobby or main
+     	  - press desired floor
+     	-if desired floor cannot be found, move away from buttons and ask another passenger to select your desired floor.
+     	  - if no other passengers, please stay put until another passenger enters the elevator
+     	    - ask that passenger for help
+ - when desired floor is reached, cautiously exit the elevator 
+
+
