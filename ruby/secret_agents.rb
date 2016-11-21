@@ -9,12 +9,6 @@
 #   b. Go to next index and repeat steps 3a(1)-(3).
 # Print "encrypted" string.
 
-#DECRYPT
-# ask for password
-# receive encrypted password
-# use the alphabet as a string to figure out which letter comes before the password letter
-# make that letter the new letter  
-# print the word 
 
  def encrypt(secret_password)
 	index = 0
@@ -30,9 +24,45 @@
   print secret_password
 end
 
-encrypt("zebra")
 
 
+# DECRYPTION
+# alphabet_string = "abcdefghijklmnopqrstuvwxyz"
+# 1. Receive string input and assign to a variable.
+# 2. Starting at index[0], shift letters in string backward by one letter each.
+#   a. Analyze character at index[n]:
+#     (1) Is character an "a"? If true shift backward to "z"
+#     (2) Is character anything other than a blank space? If true, continue...
+#     (3) Compare character in index[n] to alphabet_string and find matching letter.
+#     (4) Retrieve index of letter matched in 2a(3)
+#     (5) Take letter assciated with [index-1] and add to new variable.
+#     (6) In the absence of specfic instructions, blank spaces will be left alone.
+#   b. Go to next index and repeat steps 2a(1)-(6).
+# 3. Return "decrypted" string.
+
+def decrypt(secret_password)
+  i = 0
+  decrypted_password = ""
+  while i < secret_password.length
+    if secret_password[i] != " "
+      alphabet = "abcdefghijklmnopqrstuvwxyz"
+      letter = secret_password[i]
+      output = alphabet.index(letter)
+      result = alphabet[output-1]
+      decrypted_password << result
+    elsif secret_password[i] == " "
+      decrypted_password << " "
+    end
+    
+    i += 1
+  end
+    
+  decrypted_password
+    
+end
+
+
+print decrypt(encrypt("swordfish"))
 
 
 
