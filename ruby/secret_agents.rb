@@ -62,7 +62,30 @@ def decrypt(secret_password)
 end
 
 
-print decrypt(encrypt("swordfish"))
+#print decrypt(encrypt("swordfish"))
+#Driver Code
+#1 Ask the user whether they'd like to decrypt or encrypt a password
+#  (a)if decrypt, be sure to set up to run the decrypt method.
+#  (b)if encrypt, be sure to set up to run the encypt method.
+#2 Ask the user to enter their password to decrypt or encrypt
+#3 Place the input password to call the method and run
+#4 return the password and exit.
+
+
+puts "Hello Secret Agent. Would you like to encrypt or decrypt a password?"
+how = gets.chomp
+
+
+puts "please enter your password"
+word = gets.chomp
+
+if how == "encrypt"
+	print encrypt(word)
+else print decrypt(word)
+
+end
+
+
 
 
 
