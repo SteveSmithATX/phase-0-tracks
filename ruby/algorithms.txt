@@ -23,4 +23,32 @@ Robot Elevator
      	    - ask that passenger for help
  - when desired floor is reached, cautiously exit the elevator 
 
+ Making a Keurig coffee
+
+- find a cup of desired size for your coffee
+- determine number of oz for the cup
+- turn on Keurig and wait until it completes warm up
+- choose coffee from selection of coffee
+- open Keurig machine top to input coffee pod
+  - if another pod is currently occupying machine, remove before input
+    - close top after input
+  - else, input your pod and close top
+- determine water staus
+  - is there an "add water" notification
+    -if yes, add water
+    -if no, proceed
+- select cup size on keurig to correspond with your chosen cup size
+  - if cup is smaller than lowest cup size on the machine, find a bigger cup
+  - else, proceed
+- select the "brew" button and wait
+- upon completeion of brew, determine how you want your coffee
+  - black, with cream, with sugar, with cream and sugar
+    - if yes to cream or sugar, determine number of each to add
+      - add cream or sugar
+        - stir and enjoy
+    - if no to cream or sugar, remove cup and enjoy your coffee
+ 
+- enjoy your coffee, if additional cups are determined necessary, repeat previous steps
+
+
 
