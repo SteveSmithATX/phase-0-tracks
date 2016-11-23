@@ -18,7 +18,7 @@
 #     - ask for them to select a new value 
 #     - inform user that key #{} has been updated to value #{}
 #   - if no, skip
-# - print lates version of results
+# - print latest version of results
 
 # Interior Design Hash
 
@@ -39,5 +39,40 @@ puts "Hello and welcome to the interior design questionaire.  We're going to ask
 puts "Please enter your full name:"
 int_des[:client_name] = gets.chomp 
 puts "Please enter your current age"
+int_des[:age] = gets.chomp.to_i
+puts "How many children do you currently have?"
+int_des[:num_children] = gets.chomp.to_i
+puts "What is your is your total budget?"
+int_des[:budget] = gets.chomp.to_i
+puts "Do you like modern design?"
+int_des[:modern] = gets.chomp
+puts "What is your favorite color?"
+int_des[:fav_color] = gets.chomp
+puts "What color do you hate?"
+int_des[:hates_color] = gets.chomp
 
-p int_des
+	puts "Here's what we have so far:"
+	int_des.each do |key, value|
+		puts "#{key} : #{value}"
+	end
+
+puts "Is there something you'd like to change? If no, please type quit. (yes or quit)"
+answer = gets.chomp
+
+if answer == "yes"
+	puts "Please type which item you'd like to change (ex: budget, num_children, etc.)"
+	new_answer = gets.chomp.to_sym
+	puts "Please type the new value for your answer."
+	new_value = gets.chomp
+	int_des[new_answer] = new_value
+	puts "OK!"
+end
+
+if answer == "quit"
+	puts "Great, Thank you!"
+end
+
+puts "Here are your latest answers:"
+int_des.each do |key, value|
+			puts "#{key} : #{value}"
+		end
