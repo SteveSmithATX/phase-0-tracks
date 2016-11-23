@@ -13,27 +13,38 @@
 #	end
 #end
  
-def fib(x)
-  fib_array = [0, 1]
-  index = 0
+#def fib(x)
+#  fib_array = [0, 1]
+#  index = 0
 
-	while index < fib_array.length
+#	while index < fib_array.length
 
-    fib_array.push ((fib_array.last) + (fib_array[fib_array.length-2]))
+#    fib_array.push ((fib_array.last) + (fib_array[fib_array.length-2]))
   
-    index += 1
+#    index += 1
     
-    break if x == fib_array.length
+#   break if x == fib_array.length
 
-  	end
+#  	end
   
-  p fib_array
+#  p fib_array
   
-  p fib_array.last
+#  p fib_array.last
 
-end
+#end
 
-fib(100)
+#fib(100)
+
+#pseudocode insertion sort
+# - Start at first index
+#  - evaluate that expression
+# - move to the next index
+#  - evaluate that expression and determine if higher or lower than previous index
+#  - if lower, move to the left, if higher, keep where it is
+# - move to the next index
+#  - evaluate that index
+#  - if lower, move into the sorted indices, if higher, keep where it is
+#- continue to iterate through list until you reach an entire sorted array
 
 
 
