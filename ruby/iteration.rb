@@ -1,15 +1,34 @@
-#write your own method that takes a block. 
-#Your method should print out a status message before 
-#and after running the block. Your block doesn't have to 
-#do anything fancy -- it can just print out several of 
-#its own parameters.
 
-def greeting
-	puts "Well Hello there!"
-	3.times {yield("Happy Thanksgiving", "Merry Christmas", "Happy New Year")}
 
-	puts "See you next year!"
+actor = ["G. Clooney", "C. Tatum", "D. Washington", "L. Neeson", "A. Sandler", "L. Dicaprio", "M. Wahlberg"]
+
+
+actress = {A_Jolie: "Mrs. Smith",
+	Scar_Johanson: "Black Widow",
+J_Aniston: "Rachel(from friends)",
+M_Kunis: "Meg Griffin",
+C_Theron: "Imperator Furiosa",
+E_Stone: "Olive",
+J_Alba: "Sue Storm" }
+
+actor.each do |actor| 
+	puts "I really like #{actor} as an actor!"
 end
 
-greeting  { |holiday_1, holiday_2, holiday_3| puts "I hope you have a #{holiday_1}, 
-#{holiday_2} and #{holiday_3}!"}
+actor.map! do |actor|
+	puts actor
+	actor.upcase
+end
+
+puts "after the .map call:"
+p actor
+
+actress.each do |name, character|
+	puts "I loved #{name} when she played the character #{character} in that movie!"
+end
+
+actress.map do |name, character|
+	puts actress
+end
+
+
