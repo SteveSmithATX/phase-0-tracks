@@ -65,7 +65,7 @@ School = {
 			students: {
 				Bobby: "A",
 				Mike: "A",
-				Jennifer: "B",
+				Jennifer: "B",3
 				Susan: "B"
 			}
 		}
