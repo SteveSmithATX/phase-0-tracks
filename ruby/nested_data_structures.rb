@@ -82,4 +82,13 @@ School = {
 
 }
 
-p School 
+#p School[:science][:students][:Bobby]
+
+# Bobbys_grades {}
+# school.each_key { |subject| Bobbys_grades.store subject}
+# school[:math][:sience][:english][:history] = subject
+# puts Bobbys_grades {}
+
+
+
+
