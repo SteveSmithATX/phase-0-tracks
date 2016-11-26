@@ -31,8 +31,36 @@ actress.map do |name, character|
 end
 =end
 
-arr_rand = [33,	48,	36,	99,	93, 7, 19,	61,	60,	16, 86,	37,	53,	36,	67]
+#arr_rand = [33, 48, 36, 99,	93, 7, 19,	61,	60,	16, 86,	37,	53,	36,	67]
 
-{ |arr_rand.each| p arr_rand >= 50 }
+#1 done
+#arr_rand.delete_if { |x| x <= 50  }
+#puts arr_rand.sort
+
+#2
+#	if x >= 50 
+#end
+#arr_rand.delete_if { |x| x >=50 }
+#puts arr_rand.sort
+
+#array_letter = ["A", "n", "G", "I", "O", "l", "p", "W", "v", "n"]
+
+#3
+#array_letter.delete_if { |l| l == l.downcase}
+#puts array_letter
+
+actress_names = {A_Jolie: "Mrs. Smith",
+	Scar_Johanson: "Black Widow",
+J_Aniston: "Rachel(from friends)",
+M_Kunis: "Meg Griffin",
+C_Theron: "Imperator Furiosa",
+E_Stone: "Olive",
+J_Alba: "Sue Storm" }
+
+#4 only an a in their name:
+
+actress_names.each |key, "value"|
+	puts "actress #{key}, #{value}"
+
 
 

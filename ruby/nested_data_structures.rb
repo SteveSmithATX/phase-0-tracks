@@ -38,10 +38,13 @@ School = {
 				Mike: "C",
 				Jennifer: "C",
 				Susan: "B"
+			},
+			book_list: [
+				"Algebra 101",
+				"The Best of Algebra"
+			]
 
-			}
-
-		}
+		},
 		science: {
 			teacher_name: "Mrs. Callahan",
 			students: {
@@ -49,8 +52,9 @@ School = {
 				Mike: "B",
 				Jennifer: "B",
 				Susan: "C"
-			}
-		}
+			},
+			book_list: []
+		},
 		english: {
 			teacher_name: "Mr. Dowell",
 			students: {
@@ -58,16 +62,24 @@ School = {
 				Mike: "F",
 				Jennifer: "A",
 				Susan: "A"
-			}
-		}
+			},
+			book_list: ["English: The Fundamentals"
+			]
+		},
 		history: {
 			teacher_name: "Mrs. Wright",
 			students: {
 				Bobby: "A",
 				Mike: "A",
-				Jennifer: "B",3
+				Jennifer: "B",
 				Susan: "B"
-			}
+			},
+			book_list: ["History of the U.S.",
+				"World History"
+			]
+
 		}
 
 }
+
+p School 
