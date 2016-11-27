@@ -1,4 +1,4 @@
-=begin
+
 actor = ["G. Clooney", "C. Tatum", "D. Washington", "L. Neeson", "A. Sandler", "L. Dicaprio", "M. Wahlberg"]
 
 
@@ -29,38 +29,27 @@ end
 actress.map do |name, character|
 	puts actress
 end
-=end
 
-#arr_rand = [33, 48, 36, 99,	93, 7, 19,	61,	60,	16, 86,	37,	53,	36,	67]
 
-#1 done
-#arr_rand.delete_if { |x| x <= 50  }
-#puts arr_rand.sort
+arr_rand = [33, 48, 36, 99,	93, 7, 19,	61,	60,	16, 86,	37,	53,	36,	67]
 
-#2
-#	if x >= 50 
-#end
-#arr_rand.delete_if { |x| x >=50 }
-#puts arr_rand.sort
 
-#array_letter = ["A", "n", "G", "I", "O", "l", "p", "W", "v", "n"]
+arr_rand.delete_if { |x| x <= 50  }
+puts arr_rand.sort
 
-#3
-#array_letter.delete_if { |l| l == l.downcase}
-#puts array_letter
 
-actress_names = {A_Jolie: "Mrs. Smith",
-	Scar_Johanson: "Black Widow",
-J_Aniston: "Rachel(from friends)",
-M_Kunis: "Meg Griffin",
-C_Theron: "Imperator Furiosa",
-E_Stone: "Olive",
-J_Alba: "Sue Storm" }
+arr_rand.delete_if { |x| x >=50 }
+puts arr_rand.sort
 
-#4 only an a in their name:
+array_letter = ["A", "n", "G", "I", "O", "l", "p", "W", "v", "n"]
 
-actress_names.each |key, "value"|
-	puts "actress #{key}, #{value}"
+
+array_letter.delete_if { |l| l == l.downcase}
+puts array_letter
+
+
+
+
 
 
 

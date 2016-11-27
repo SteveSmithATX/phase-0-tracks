@@ -11,10 +11,21 @@
 # 	- if its an edge case
 # - change the consonants to the next consonant in the alphabet 
 # 	- run method to shuffle consonant letters over
+# - capitailize again
 #  Felicia Torres
 
-def spy_name(real_name)
 
-end
+###########This downcases the name, splits it and reverses it.##################
+# def spy_name(real_name)
+# 	real_name.downcase.split(' ').reverse 
+# end
 
-spy_name(Felicia Torres)
+#   spy_name("Felicia Torres")
+# # letters = "torres".split, "felicia".split('')
+# letters.class
+# letters.map! { |letter| letter.next }
+# letters
+# new_string = letters.join('')
+
+p "Felicia Torres".downcase.split(' ').reverse = letters
+p letters.split('') 
