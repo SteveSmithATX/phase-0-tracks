@@ -20,13 +20,13 @@
 
 # Method to update the quantity of an item
 # input: hash, item to update, new quantity
-# steps: 
-# output:
+# steps: input hash, the item to be changed and the new value
+# output: new list with updated value for key
 
 # Method to print a list and make it look pretty
-# input: 
-# steps:
-#output:
+# input: print a block that looks pretty
+# steps: do for each item, key: value
+#output: key: value printed 
 
 ###############################
 
@@ -36,30 +36,45 @@ items_array = item_string.split(' ')
 items_array.each do |item| 
 	grocery_list [item] = 1 
 end
-p grocery_list
+#p grocery_list
 grocery_list 
 end
 
 list = grocery_list("carrots apples cereal pizza")
 
-p list
+#p list
 
 def add_item(list, key, value)
 	list [key] = value
-	p list
+	#p list
 	list
 end
 
-list = add_item(list, "milk", 1)
+
+add_item(list, "Lemonade", 2)
+add_item(list, "Tomatoes", 3)
+add_item(list, "Onions", 1)
+list = add_item(list, "Ice Cream", 4)
+
 
 def remove_item(list, item_r)
 	list.delete(item_r)
-	p list
+	#p list
 	list
 end
 
-remove_item(list, "carrots")
+remove_item(list, "Lemonade")
 
+def update_item(list, key, value)
+	list [key] = value
+	#p list
+	list
+end
 
+list = update_item(list, "Ice Cream", 1)
+
+list.each do |key, value| 
+	puts "#{key}: #{value}"
+end
 
 
