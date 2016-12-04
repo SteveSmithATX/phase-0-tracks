@@ -31,31 +31,33 @@
 # puts fido.speak(2)
 
 
+
 class Bear
 
-    def initialize(color, food, territory)
-    @food = food
-    @color = color
-    @territory = territory
-    end
+    def initialize
+    end 
 
-    def eats
-        puts "bear is a #{@food} that eats fish, berries, etc."
+    def eats(food)
+        puts "bear is a #{food} that eats fish, berries, etc."
     end
 
     def sleeps
-        puts "bear goes into hibernation in #{@territory}"
+        puts "bear goes into hibernation in #{territory}"
     end
 
 end
+bears = []
 
 index = 0
 until index == 50
-puts "bear = Bear.new(black, berries, u.s.)"
+bears << Bear.new
 index +=1 
+bears
 end
 
-
+bears.each do |omniovre| 
+   bears.eats("omnivore")
+end
 
 
 
