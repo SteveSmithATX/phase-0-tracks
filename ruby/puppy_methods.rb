@@ -32,33 +32,40 @@
 
 
 
+
 class Bear
 
-    def initialize
+    def initialize(name)
+        @name = name
+        @diet = "omnivore"
+        @teritory = "woods"
     end 
 
-    def eats(food)
-        puts "bear is a #{food} that eats fish, berries, etc."
+    def eats
+        puts "#{@name} is a type of bear is a #{@diet} that eats fish, berries, etc."
     end
 
     def sleeps
-        puts "bear goes into hibernation in #{territory}"
+        puts "bear goes into hibernation in #{@teritory}"
     end
 
 end
+
+name = Bear.new("Grizly")
+puts name.eats
+
 bears = []
-
 index = 0
-until index == 50
-bears << Bear.new
+50.times do
+bears << Bear.new(" ")
 index +=1 
-bears
 end
 
-bears.each do |omniovre| 
-   bears.eats("omnivore")
-end
 
+bears.each do |bears| 
+puts bears.eats
+puts bears.sleeps
+end
 
 
 
