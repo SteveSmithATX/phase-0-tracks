@@ -3,16 +3,18 @@
 // output the string 
 
 
+
+var reverseWord = [];
+
 function reverse(s) {
   return s.split('').reverse().join('');
 }
 
-var reverseWord = reverse(" ") 
 
+reverse("hello"); reverseWord = reverse;
 
-reverse("hello");
 
 if (1==1){
-	document.write 
+	console.log(reverseWord);
 
 }
