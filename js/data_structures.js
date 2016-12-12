@@ -30,3 +30,12 @@ function Car(model, color, fourWheeldrive) {
 	this.fourWheeldrive = fourWheeldrive;
 	this.starts = function() { console.log("Rurrrr, Rurrrr, Rurrrrr....VROOM!!! VROOM!!!"); };
 }
+
+
+var carOne = new Car("Model-T", "Black", false);
+console.log(carOne);
+carOne.starts();
+
+var carTwo = new Car("Tesla", "Red", true);
+console.log(carTwo);
+carTwo.starts();
