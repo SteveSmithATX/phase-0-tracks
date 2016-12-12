@@ -50,9 +50,19 @@ arraySort(phrase)
 // Function that takes a 'number' for the argument to create 'number' of "words" of varying lengths
 // 		create an array of letters for it to randomly pick from (must be 11 letters long)
 // 		create function to randomly pick an index, 1-10 (leave out index 0) and assign that index to a string 
-// 		Math.floor((Math.random() * 10) + 1); will give you a random number between 1-10 for the length of the words
+// 		Math.floor((Math.random() * 10); will give you a random number between 1-10 for the length of the words
 // Save the words to an array.  
-// 
+//
+
+// function randArray(int_1) {
+var letterArray = ["a","q","p","d","s","r","t","l","n","e","z"];
+for (var i = 0; i < 10 ; i++) {
+	var rand_letter = letterArray[Math.floor(Math.random() * 10)];
+	console.log(rand_letter + rand_letter) * Math.floor(Math.random() * 10); 
+} 
+
+// }
+
 
 
 
